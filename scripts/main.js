@@ -170,3 +170,58 @@ for (let i = 0; i < buttonList.length; i++) {
         
     });
 }
+
+// ==============================
+// Categories Déroulantes
+// ==============================
+
+let bioOn = true
+document.getElementById("bioPlus").addEventListener("click", e => {
+    
+    let bio = document.getElementById("bioContainer")
+    if(bioOn){
+        bio.classList.add("hiddenCategory");
+        document.getElementById("bioPlus").innerText = "+"
+        bio.style.padding = 0;
+        bioOn = !bioOn;
+    }else{
+        bio.classList.remove("hiddenCategory");
+        document.getElementById("bioPlus").innerText = "-"
+        bio.style.padding = "20px"
+        bioOn = !bioOn;
+    }
+
+})
+let formationOn = false
+document.getElementById("formationPlus").addEventListener("click", e => {
+    
+    let formation = document.getElementById("formationContainer")
+    if(formationOn){
+        formation.classList.add("hiddenCategory");
+        // gsap.to("#formationContainer", {height: "0px", duration:"1s"})
+        document.getElementById("formationPlus").innerText = "+"
+        formationOn = !formationOn;
+    }else{
+        formation.classList.remove("hiddenCategory");
+        // gsap.from("#formationContainer", {height: "0px", duration:"1s"})
+        document.getElementById("formationPlus").innerText = "-"
+        formationOn = !formationOn;
+    }
+
+})
+
+let experienceOn = false
+document.getElementById("experiencePlus").addEventListener("click", e => {
+    
+    let experience = document.getElementById("experienceContainer")
+    if(experienceOn){
+        experience.classList.add("hiddenCategory");
+        document.getElementById("experiencePlus").innerText = "+"
+        experienceOn = !experienceOn;
+    }else{
+        experience.classList.remove("hiddenCategory");
+        document.getElementById("experiencePlus").innerText = "-"
+        experienceOn = !experienceOn;
+    }
+
+})

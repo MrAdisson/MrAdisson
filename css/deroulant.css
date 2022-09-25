@@ -1,0 +1,22 @@
+.categoryTitle{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.plusBtn{
+    z-index: 0;
+    background-color: #5F9EA0;
+    border-radius: 50%;
+    height:30px;
+    width:30px;
+}
+
+.hiddenCategory{
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
