@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/Draggable.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.43/Tone.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/lightlines.css">
+    <link rel="stylesheet" href="/css/xp.css">
+
+    <title>CV Cédric Adisson</title>
+</head>
+<body>
+    <div id = "magicCircle" style="display: none"></div>
+    <div id="lightLines">
+        <div id="lineh1"></div>
+        <!-- <div id="lineh2"></div>
+        <div id="lineh3"></div> -->
+        <div id="lineh4"></div>
+        <!-- <div id="lineh5"></div>
+        <div id="lineh6"></div> -->
+        <div id="lineh7"></div>
+        <!-- <div id="lineh8"></div> -->
+        <div id="lineh9"></div>
+        <!-- <div id="lineh10"></div>
+        <div id="lineh11"></div>
+        <div id="lineh12"></div> -->
+    </div>
+    <div id="linkMenu">
+        <ul>
+            <li>
+                <a href="http://linkedin.com/" class="leftMenuLinks">Autre site</a>
+            </li>
+            <li>
+                <a href="http://linkedin.com/" class="leftMenuLinks"> <ion-icon name="logo-linkedin" class="leftMenuLogo" style="font-size:24px"></ion-icon> Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/MrAdisson/" class="leftMenuLinks"> <ion-icon name="logo-github" class="leftMenuLogo" style="font-size:24px"></ion-icon> Github</a>
+            </li>
+        </ul>
+    </div> 
+    
+    <div id="topMenu"> 
+        
+            <div class="menu"><button type="button" id="leftMenuBtn"><ion-icon name="menu" size="large" ></ion-icon></button></div>
+            <div class="lang"><button type="button" id="lightSelection"><ion-icon id="lightIcon"name="moon-outline" size="large"></ion-icon></button></div>
+            <!-- <div class="search" ><ion-icon name="search" size="large"></ion-icon></div> -->
+            
+    </div>
+    <div id="mainContainer">
+
+        <div id="headProfile">
+            <h1 id="myName">Cédric<br/> <span class="blueTxt"> Adisson</span></h1>
+            <div class="profilePic"> </div>
+
+        </div>
+
+        <h4 class="intitule">Producteur de Musique - Développeur <strong><span class="jobText blueTxt">passionné</span></strong></h4>
+        
+        <h4>BIO :</h4>
+        <div id="bioContainer" class="contentContainer">
+            <p class = "bioText">
+                Bonjour, je m'appelle Cédric Adisson, j'ai <span id="ageSpan">  </span> ans et je suis 
+                compositeur de musique, ingénieur du son et développeur. 
+                Je suis diplômé de l'ISTS (Institut Supérieur des Techniques du Son), 
+                une branche de l'École Supérieure de Réalisation Audiovisuelle (ESRA), 
+                où j'ai pu, via les cours et mon expérience personnelle, découvrir de nombreuses manières
+                de manier le son et la musique.
+                Musicien depuis mon plus jeune âge, j'ai obtenu ma Médaille d'Or de Solfège au Conservatoire de Saint-Omer 
+                puis mon Diplôme National d'Orientation Professionnelle de Piano au Conservatoire de Lille. 
+                Je suis également compositeur de musique depuis l'enfance, d'abord via des logiciels de scoring 
+                (écriture de partition), puis en Musique Assistée par Ordinateur (MAO). 
+                En 2021, j'ai effectué une reconversion dans le développement informatique à l'ENI Ecole à Rennes, tout en maintenant mes projets musicaux.
+
+            </p>
+            <script>  
+                var dob = new Date("01/14/1995");  
+                //DIFFERENCE DE MOIS 
+                var month_diff = Date.now() - dob.getTime();  
+                console.log("month diff : " + month_diff)
+                //CONVERSION EN DATE FORMAT  
+                var age_dt = new Date(month_diff);          
+                //EXTRACTION DE L'ANNEE      
+                var year = age_dt.getUTCFullYear();       
+                console.log(year)       
+                //CALCUL DE MON ÂGE  
+                var age = Math.abs(year - 1970);  
+                //AFFICHAGE DE L'ÂGE DANS LE DOCUMENT 
+                document.getElementById("ageSpan").innerText = age 
+            </script>  
+        </div>
+
+
+
+        <h4>FORMATION :</h4>
+        
+        <div id="experienceContainer" class="contentContainer experienceContainer">
+            
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >INGENIEUR DU SON</p>
+                    <p class = "xpDateAndPlace"><em>2014 - 2017 <br> Institut Supérieur des Techniques du Son (PARIS)</em></p>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Diplôme D'Enseignement Supérieurs des Techniques du Son (DESTS - RNCP niveau 6)
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Composition et enregistrement / mixage / mastering de nombreuses productions musicales
+                        </p>
+                        <p>
+                            Réalisation de courts métrages (La gerboise du désert)
+                        </p>
+                        <p>
+                            Musique à l'image (publicité, film)
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Développeur Web et Web Mobile</p>
+                    <em class="xpDateAndPlace">2021<br> ENI Ecole (Rennes)</em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Titre de Développeur Web et Web Mobile (RNCP niveau 5)
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Développement d'une application web organisée en couche avec Java EE et SQL Server
+                        </p>
+                        <p>
+                            Analyse, conception et développement d'un site web avec PHP, Symfony et MySQL
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div style="margin: 30px;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam earum sint quibusdam blanditiis nulla error magnam, ad excepturi itaque quas cupiditate consectetur. Dolores quo minus commodi quaerat inventore? Sint blanditiis earum velit numquam praesentium, quis dignissimos quae explicabo natus autem quisquam officia laborum id exercitationem expedita voluptates eius facilis iste!</div>
+
+        <h4>EXPERIENCE :</h4>
+        
+        <div id="experienceContainer" class="contentContainer experienceContainer">
+            
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >COMPOSITEUR DE MUSIQUE</p>
+                    <p class = "xpDateAndPlace"><em>2018 - 2022 <br> France</em></p>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Compositeur de musique pour différents supports de diffusion (entreprises, courts métrages, théâtre...)
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Création de l'identité sonoree de Candéliance dans le cadre de la digitalisation de l'entreprise
+                        </p>
+                        <p>
+                            Composition de musique pour des courts-métrages ("Frou-frou", "Théomania") et un long métrage ("Le Renard Blanc" - Association des Linx)
+                        </p>
+                        <p>
+                            Composition de musique pour des pièces de théâtre ("Veuve à tout prix", "Au revoir... et merci !")
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Conseiller Commercial</p>
+                    <em class="xpDateAndPlace">2018 - 2019 (CDI)<br> Sonovente (Palaiseau)</em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Conseiller commercial pour l'entreprise Sonovente
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Vente directe en B2C, gestion quotidienne d'appels et mails entrants
+                        </p>
+                        <p>
+                            SEO (référencement Google Reviews, TrustPilot, réseaux sociaux)
+                        </p>
+                        <p>
+                            Suivi de clientèle et gestion des cas litigieux et impondérables
+                        </p>
+                        <p>
+                            Expertise sur les produits vendus (matériel de musique / sonorisation / éclairage)
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Développeur Web</p>
+                    <em class="xpDateAndPlace">2021 (Stage)<br> REKRUT (Paris)</em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Stage pour la startup REKRUT
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Développement d'un site web (PHP Symphony / JavaScript) 
+                        </p>
+                        <p>
+                            Réalisation et mise en place de la base de données ainsi que des accès aux données (MySQL + Doctrine)
+                        </p>
+                        <p>
+                            Mise en place de l'espace client et l'espace administrateur avec gestion des données
+                        </p>
+                        <p>
+                            Réalisation des maquettes responsive (Web + Mobile)
+                        </p>
+                        <p>
+                            Design et implémentation de fonctionnalités (tableau de bord client, suivi de candidatures)
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Développeur Full-Stack</p>
+                    <em class="xpDateAndPlace">2022<br> Safebear (Paris)</em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Réalisation d'un POC (Proof of Concept) d'application d'auto-modération de messages basée sur l'intelligence artificielle pour SafeBear
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Réalisation et mise en place de l'API (NodeJS)
+                        </p>
+                        <p>
+                            Envoie des données (messges) dans le modèle d'intelligence artificielle afin d'en vérifier la toxicité (Javascript / TensorFlow)
+                        </p>
+                        <p>
+                            Réalisation d'un site web utilisant l'API pour en démontrer le fonctionnement (NodeJS)
+                        </p>
+                        <p>
+                            Création d'un bot Discord utilisant l'API et auto-modérant les messages contenant de la toxicité (Python / DiscordAPI)
+                        </p>
+                        <a href="https://safebear-test-app.herokuapp.com/" target="_blank">&#8594; Découvrir l'application &#8592; </a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div style="margin: 30px;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam earum sint quibusdam blanditiis nulla error magnam, ad excepturi itaque quas cupiditate consectetur. Dolores quo minus commodi quaerat inventore? Sint blanditiis earum velit numquam praesentium, quis dignissimos quae explicabo natus autem quisquam officia laborum id exercitationem expedita voluptates eius facilis iste!</div>
+
+
+    </div>
+
+
+    
+</body>
+<script src="/scripts/main.js"></script>
+</html>
