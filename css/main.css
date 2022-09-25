@@ -72,11 +72,18 @@ body{
 #myName{
     margin-right: 40px;
 }
+
 .blueTxt{
     color: #5F9EA0
 }
 
-@media screen and (max-width: 480px){
+.contactInfo{
+    margin-left: 30px;
+}
+
+
+
+@media screen and (max-width: 640px){
     #headProfile{
 
         flex-direction: column;
@@ -85,7 +92,16 @@ body{
     }
     #myName{
     margin-right:0;
+    
 }
+.contactInfo{
+    margin: 10px 0px;
+    font-size: .9em;
+
+    /* text-align: left; */
+
+}
+
 }
 
 .intitule{
@@ -160,6 +176,8 @@ button, input[type="submit"], input[type="reset"] {
     box-sizing: border-box;
     border: 1px solid #5F9EA0;
     border-radius:  10px 0px;
+    text-align: justify;
+
 
 }
 

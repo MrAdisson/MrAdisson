@@ -182,17 +182,19 @@ document.getElementById("bioPlus").addEventListener("click", e => {
     if(bioOn){
         bio.classList.add("hiddenCategory");
         document.getElementById("bioPlus").innerText = "+"
+        bio.style.border = "0px";
         bio.style.padding = 0;
         bioOn = !bioOn;
     }else{
         bio.classList.remove("hiddenCategory");
         document.getElementById("bioPlus").innerText = "-"
+        bio.style.border = "1px solid #5F9EA0";
         bio.style.padding = "20px"
         bioOn = !bioOn;
     }
 
 })
-let formationOn = false
+let formationOn = true
 document.getElementById("formationPlus").addEventListener("click", e => {
     
     let formation = document.getElementById("formationContainer")
@@ -210,7 +212,7 @@ document.getElementById("formationPlus").addEventListener("click", e => {
 
 })
 
-let experienceOn = false
+let experienceOn = true
 document.getElementById("experiencePlus").addEventListener("click", e => {
     
     let experience = document.getElementById("experienceContainer")

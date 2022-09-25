@@ -40,13 +40,13 @@
     <div id="linkMenu">
         <ul>
             <li>
-                <a href="http://linkedin.com/" class="leftMenuLinks">Autre site</a>
+                <a href="http://linkedin.com/" target="_blank" class="leftMenuLinks">Autre site</a>
             </li>
             <li>
-                <a href="http://linkedin.com/" class="leftMenuLinks"> <ion-icon name="logo-linkedin" class="leftMenuLogo" style="font-size:24px"></ion-icon> Linkedin</a>
+                <a href="https://www.linkedin.com/in/c%C3%A9dric-adisson-a6a54797/" target="_blank" class="leftMenuLinks"> <ion-icon name="logo-linkedin" class="leftMenuLogo" style="font-size:24px"></ion-icon> Linkedin</a>
             </li>
             <li>
-                <a href="https://github.com/MrAdisson/" class="leftMenuLinks"> <ion-icon name="logo-github" class="leftMenuLogo" style="font-size:24px"></ion-icon> Github</a>
+                <a href="https://github.com/MrAdisson/" target="_blank" class="leftMenuLinks"> <ion-icon name="logo-github" class="leftMenuLogo" style="font-size:24px"></ion-icon> Github</a>
             </li>
         </ul>
     </div> 
@@ -63,15 +63,21 @@
         <div id="headProfile">
             <h1 id="myName">Cédric<br/> <span class="blueTxt"> Adisson</span></h1>
             <div class="profilePic"> </div>
+            <div class="contactInfo">
+                <div class="mail"> <ion-icon class="blueTxt" name="mail-outline"></ion-icon> cedric.adisson<span class = blueTxt>@</span>gmail.com </div>
+                <div class="phone"><ion-icon class="blueTxt" name="call-outline"></ion-icon> +33 6 01 39 39 14</div>
+                <div class="location"> <ion-icon class="blueTxt" name="home-outline"></ion-icon> Lille, France</div>
+            </div>
+
 
         </div>
 
-        <h4 class="intitule">Producteur de Musique - Développeur <strong><span class="jobText blueTxt">passionné</span></strong></h4>
+        <h4 class="intitule">Producteur  de Musique - Développeur <strong><span class="jobText blueTxt">passionné</span></strong></h4>
         
         <div class="categoryTitle"><h4 >BIO : </h4> <button class="plusBtn" id="bioPlus"> - </button></div>
         <div id="bioContainer" class="contentContainer">
             <p class = "bioText">
-                Bonjour, je m'appelle Cédric Adisson, j'ai <span id="ageSpan">  </span> ans et je suis 
+                     Bonjour, je m'appelle Cédric Adisson, j'ai <span id="ageSpan">  </span> ans et je suis 
                 compositeur de musique, ingénieur du son et développeur. 
                 Je suis diplômé de l'ISTS (Institut Supérieur des Techniques du Son), 
                 une branche de l'École Supérieure de Réalisation Audiovisuelle (ESRA), 
@@ -103,37 +109,10 @@
 
 
 
-        <div class="categoryTitle"><h4 >FORMATIONS : </h4> <button class="plusBtn" id="formationPlus"> + </button></div>
+        <div class="categoryTitle"><h4 >FORMATIONS : </h4> <button class="plusBtn" id="formationPlus"> - </button></div>
         
-        <div id="formationContainer" class="contentContainer experienceContainer hiddenCategory">
+        <div id="formationContainer" class="contentContainer experienceContainer">
             
-            <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >INGENIEUR DU SON</p>
-                    <p class = "xpDateAndPlace"><em>2014 - 2017 <br> Institut Supérieur des Techniques du Son (PARIS)</em></p>
-                </div>
-                <div class = "xpMainContent">
-                    <div class="xpTxt">
-                        <p class="diplome">
-                            Diplôme D'Enseignement Supérieurs des Techniques du Son (DESTS - RNCP niveau 6)
-                        </p>
-                    </div>
-                    <div class="xpProject">
-                        <p>
-                            Composition et enregistrement / mixage / mastering de nombreuses productions musicales
-                        </p>
-                        <p>
-                            Réalisation de courts métrages (La gerboise du désert)
-                        </p>
-                        <p>
-                            Musique à l'image (publicité, film)
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
-
             <div class="xp">
                 <div class= "xpInfo">
                     <p class="xpTitle" >Développeur Web et Web Mobile</p>
@@ -158,13 +137,42 @@
 
             </div>
 
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >INGENIEUR DU SON</p>
+                    <p class = "xpDateAndPlace"><em>2014 - 2017 <br> Institut Supérieur des Techniques du Son (PARIS)</em></p>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Diplôme D'Enseignement Supérieurs des Techniques du Son (DESTS - RNCP niveau 6)
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Composition et enregistrement / mixage / mastering de nombreuses productions musicales
+                        </p>
+                        <p>
+                            Réalisation de courts métrages (<a href="https://www.youtube.com/watch?v=t-6oPUbw2o0" target="_blank"> &#8594; La gerboise du désert &#8592;</a> )
+                        </p>
+                        <p>
+                            Musique à l'image (publicité, film)
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
         </div>
 
-        <div style="margin: 30px;"> Clic sur le + pour en découvrir plus sur mes formations ! </div>
+        <!-- <div style="margin: 30px;"> ========================= </div> -->
 
-        <div class="categoryTitle"><h4 >EXPERIENCES : </h4> <button class="plusBtn" id="experiencePlus"> + </button></div>
+        <div class="categoryTitle"><h4 >EXPERIENCES : </h4> <button class="plusBtn" id="experiencePlus"> - </button></div>
         
-        <div id="experienceContainer" class="contentContainer experienceContainer hiddenCategory">
+        <div id="experienceContainer" class="contentContainer experienceContainer ">
             
             <div class="xp">
                 <div class= "xpInfo">
@@ -195,27 +203,29 @@
 
             <div class="xp">
                 <div class= "xpInfo">
-                    <p class="xpTitle" >Conseiller Commercial</p>
-                    <em class="xpDateAndPlace">2018 - 2019 (CDI)<br> Sonovente (Palaiseau)</em>
+                    <p class="xpTitle" >Développeur Full-Stack</p>
+                    <em class="xpDateAndPlace">2022<br> Safebear (Paris)</em>
                 </div>
                 <div class = "xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
-                            Conseiller commercial pour l'entreprise Sonovente
+                            Réalisation d'un POC (Proof of Concept) d'application d'auto-modération de messages basée sur l'intelligence artificielle pour SafeBear
                         </p>
                     </div>
                     <div class="xpProject">
                         <p>
-                            Vente directe en B2C, gestion quotidienne d'appels et mails entrants
+                            Réalisation et mise en place de l'API (NodeJS)
                         </p>
                         <p>
-                            SEO (référencement Google Reviews, TrustPilot, réseaux sociaux)
+                            Envoie des données (messges) dans le modèle d'intelligence artificielle afin d'en vérifier la toxicité (Javascript / TensorFlow)
                         </p>
                         <p>
-                            Suivi de clientèle et gestion des cas litigieux et impondérables
+                            Réalisation d'un site web utilisant l'API pour en démontrer le fonctionnement (NodeJS)
                         </p>
                         <p>
-                            Expertise sur les produits vendus (matériel de musique / sonorisation / éclairage)
+                            Création d'un bot Discord utilisant l'API et auto-modérant les messages contenant de la toxicité (Python / DiscordAPI)
+                        </p>
+                        <a href="https://safebear-test-app.herokuapp.com/" target="_blank">&#8594; Découvrir l'application &#8592; </a>
                         </p>
                     </div>
                 </div>
@@ -258,29 +268,27 @@
 
             <div class="xp">
                 <div class= "xpInfo">
-                    <p class="xpTitle" >Développeur Full-Stack</p>
-                    <em class="xpDateAndPlace">2022<br> Safebear (Paris)</em>
+                    <p class="xpTitle" >Conseiller Commercial</p>
+                    <em class="xpDateAndPlace">2018 - 2019 (CDI)<br> Sonovente (Palaiseau)</em>
                 </div>
                 <div class = "xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
-                            Réalisation d'un POC (Proof of Concept) d'application d'auto-modération de messages basée sur l'intelligence artificielle pour SafeBear
+                            Conseiller commercial pour l'entreprise Sonovente
                         </p>
                     </div>
                     <div class="xpProject">
                         <p>
-                            Réalisation et mise en place de l'API (NodeJS)
+                            Vente directe en B2C, gestion quotidienne d'appels et mails entrants
                         </p>
                         <p>
-                            Envoie des données (messges) dans le modèle d'intelligence artificielle afin d'en vérifier la toxicité (Javascript / TensorFlow)
+                            SEO (référencement Google Reviews, TrustPilot, réseaux sociaux)
                         </p>
                         <p>
-                            Réalisation d'un site web utilisant l'API pour en démontrer le fonctionnement (NodeJS)
+                            Suivi de clientèle et gestion des cas litigieux et impondérables
                         </p>
                         <p>
-                            Création d'un bot Discord utilisant l'API et auto-modérant les messages contenant de la toxicité (Python / DiscordAPI)
-                        </p>
-                        <a href="https://safebear-test-app.herokuapp.com/" target="_blank">&#8594; Découvrir l'application &#8592; </a>
+                            Expertise sur les produits vendus (matériel de musique / sonorisation / éclairage)
                         </p>
                     </div>
                 </div>
@@ -288,9 +296,13 @@
 
             </div>
 
+
+
+
+
         </div>
 
-        <div style="margin: 30px;"> Clic sur le + pour en découvrir plus sur mes expériences professionnelles ! </div>
+        <!-- <div style="margin: 30px;"> ========================= </div> -->
 
 
     </div>
