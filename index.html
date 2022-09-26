@@ -94,12 +94,10 @@
                 var dob = new Date("01/14/1995");  
                 //DIFFERENCE DE MOIS 
                 var month_diff = Date.now() - dob.getTime();  
-                console.log("month diff : " + month_diff)
                 //CONVERSION EN DATE FORMAT  
                 var age_dt = new Date(month_diff);          
                 //EXTRACTION DE L'ANNEE      
                 var year = age_dt.getUTCFullYear();       
-                console.log(year)       
                 //CALCUL DE MON ÂGE  
                 var age = Math.abs(year - 1970);  
                 //AFFICHAGE DE L'ÂGE DANS LE DOCUMENT 
