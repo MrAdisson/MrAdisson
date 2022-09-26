@@ -47,9 +47,6 @@ for (let i = 0; i < choices.length; i ++){
 // MENU DEROULANT GAUCHE
 // =================================================================
 
-console.log("coucou ")
-const originalLeftMargin = document.getElementById("mainContainer").style.marginLeft;
-console.log(originalLeftMargin)
 let leftMenuState = true;
 let timelineLeftMenu = gsap.timeline();
 document.getElementById("leftMenuBtn").addEventListener("click", e => {
