@@ -81,13 +81,17 @@ body{
 .contactInfo{
     margin-left: 30px;
 }
+.contactInfoItem{
+    display: flex;
+    align-items: center;
+}
 .intitule{
     min-height:40px;
     border-bottom: 1px solid #5F9EA0;
 }
 
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 705px){
     #headProfile{
 
         flex-direction: column;
