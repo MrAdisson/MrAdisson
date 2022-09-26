@@ -56,6 +56,10 @@
     <div id="topMenu"> 
         
             <div class="menu"><button type="button" id="leftMenuBtn"><ion-icon name="menu" size="large" ></ion-icon></button></div>
+            <a class="topLinkMenuItem" href="#bio">Bio</a>
+            <a class="topLinkMenuItem" href="#formations">Formations</a>
+            <a class="topLinkMenuItem" href="#experiences">Expériences</a>
+            <a class="topLinkMenuItem" href="#projets">Projets</a>
             <div class="lang"><button type="button" id="lightSelection"><ion-icon id="lightIcon"name="moon-outline" size="large"></ion-icon></button></div>
             <!-- <div class="search" ><ion-icon name="search" size="large"></ion-icon></div> -->
             
@@ -77,7 +81,7 @@
 
         <h4 class="intitule">Producteur  de Musique - Développeur <strong><span class="jobText blueTxt">passionné</span></strong></h4>
         
-        <div class="categoryTitle"><h4 >BIO : </h4> <button class="plusBtn" id="bioPlus"> - </button></div>
+        <div id= "bio" class="categoryTitle"><h4 >BIO : </h4> <button class="plusBtn" id="bioPlus"> - </button></div>
         <div id="bioContainer" class="contentContainer">
             <p class = "bioText">
                      Bonjour, je m'appelle Cédric Adisson, j'ai <span id="ageSpan">  </span> ans et je suis 
@@ -110,7 +114,7 @@
 
 
 
-        <div class="categoryTitle"><h4 >FORMATIONS : </h4> <button class="plusBtn" id="formationPlus"> - </button></div>
+        <div id="formations" class="categoryTitle"><h4 >FORMATIONS : </h4> <button class="plusBtn" id="formationPlus"> - </button></div>
         
         <div id="formationContainer" class="contentContainer experienceContainer">
             
@@ -171,14 +175,14 @@
 
         <!-- <div style="margin: 30px;"> ========================= </div> -->
 
-        <div class="categoryTitle"><h4 >EXPERIENCES : </h4> <button class="plusBtn" id="experiencePlus"> - </button></div>
+        <div id="experiences" class="categoryTitle"><h4 >EXPERIENCES : </h4> <button class="plusBtn" id="experiencePlus"> - </button></div>
         
         <div id="experienceContainer" class="contentContainer experienceContainer ">
             
             <div class="xp">
                 <div class= "xpInfo">
                     <p class="xpTitle" >COMPOSITEUR DE MUSIQUE</p>
-                    <p class = "xpDateAndPlace"><em>2018 - 2022 <br> France</em></p>
+                    <em class="xpDateAndPlace">2018-2022<br>France</em>
                 </div>
                 <div class = "xpMainContent">
                     <div class="xpTxt">
@@ -189,9 +193,6 @@
                     <div class="xpProject">
                         <p>
                             Création de l'identité sonoree de Candéliance dans le cadre de la digitalisation de l'entreprise
-                        </p>
-                        <p>
-                            Composition de musique pour des courts-métrages ("Frou-frou", "Théomania") et un long métrage ("Le Renard Blanc" - Association des Linx)
                         </p>
                         <p>
                             Composition de musique pour des pièces de théâtre ("Veuve à tout prix", "Au revoir... et merci !")
@@ -305,6 +306,136 @@
 
         <!-- <div style="margin: 30px;"> ========================= </div> -->
 
+
+        <div id="projets" class="categoryTitle"><h4 >PROJETS PERSONNELS : </h4> <button class="plusBtn" id="projectPlus"> - </button></div>
+        
+        <div id="projetContainer" class="contentContainer experienceContainer">
+            
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Projets informatiques</p>
+                    <p class = "xpDateAndPlace"><em><ion-icon name="terminal-outline"></ion-icon></em></p>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Projets en tant que développeur
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Création de mon site CV (HTML / CSS / JS) animé (GSAP) et responsive
+                        </p>
+                        <p>
+                            Réalisation d'un "chat" en WebSocket (Javascript / Socket.io)
+                        </p>
+                        <p>
+                            Création de maquettes de jeux vidéo 2D et 3D avec un moteur de jeu (Godot / Unreal Engine).
+                        </p>
+                        <p>
+                            Création de maquettes de moteurs de jeux vidéo 2D (Java / OpenGL / LWJGL).
+                        </p>
+                        <p>
+                            Création de plusieurs bot discord (Python / DiscordAPI)
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Projets audiovisuels</p>
+                    <em class="xpDateAndPlace"><ion-icon name="videocam-outline"></ion-icon></em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Projets personnels audiovisuels (Films / Courts-métrage)
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Prix de la meilleure direction artistique pour le court-métrage "Fortuna" - 48h de l'ESRA
+                        </p>
+                        <p>
+                            Co-réalisation du clip "Danser" pour l'artiste Jade Vanloo
+                        </p>
+                        <p>
+                            Assistant réalisateur, compositeur et sound-designer pour le film "Je suis un reflet" réalisé par Yanis Nasra - Nikon Festival 
+                        </p>
+                        <p>
+                            Co-réalisation du clip "Danser" pour l'artiste Jade Vanloo
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Projets musicaux</p>
+                    <em class = "xpDateAndPlace"><ion-icon name="musical-notes-outline"></ion-icon></em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Projets personnels en tant que compositeur de musique ou en lien avec la création musicale
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Réalisation musicale de la production "Plaisir" de l'artiste Adahy (Electro-pop)
+                        </p>
+                        <p>
+                            Réalisations de plusieurs lives (Ableton Live) pour des évenements musicaux en tant que Jamie Potter ou Greasy
+                        </p>
+                        <p>
+                            Composition / Mixage / Mastering de musiques pour des courts-métrages ("Frou-frou", "Théomania", "Fortuna") et un long métrage ("Le Renard Blanc" - Association des Linx)
+                        </p>
+                        <p>
+                            Responsable du booking des artistes pour la première édition du festival "Naygour" (59)
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+            <div class="xp">
+                <div class= "xpInfo">
+                    <p class="xpTitle" >Autres projets</p>
+                    <em class = "xpDateAndPlace"><ion-icon name="sparkles-outline"></ion-icon></em>
+                </div>
+                <div class = "xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Autres projets personnels divers.
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Streamer affilié Amazon sur la platform Twitch avec la chaine MrAdisson (création musicale, stream de jeu vidéo, stream de développement informatique)
+                        </p>
+                        <p>
+                            Administrateur d'un serveur de jeu Minecraft (Correction des bugs, administration et maintenance du serveur, configuration des plugins)
+                        </p>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
 
     </div>
 

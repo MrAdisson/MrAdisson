@@ -11,7 +11,7 @@
 
 gsap.from("#linkMenu", { y: 300 , duration: 1});
 gsap.from("#bioContainer", { opacity: 0, x: 300 , duration: 1});
-gsap.from("#experienceContainer", {opacity: 0, x: 300 , duration: 1, delay: .2});
+gsap.from(".experienceContainer", {opacity: 0, x: 300 , duration: 1, delay: .2});
 gsap.from("#headProfile", {opacity: 0, x: -300 , duration: 1, delay: 1});
 
 
@@ -224,3 +224,15 @@ document.getElementById("experiencePlus").addEventListener("click", e => {
     }
 
 })
+
+
+//SMOOTH #ANCHOR LINKS SCROLLING
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
