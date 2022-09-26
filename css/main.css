@@ -147,7 +147,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top:750px;
+    top:800px;
 }
 
 
@@ -188,3 +188,8 @@ button, input[type="submit"], input[type="reset"] {
 
 }
 
+.categoryTitle{
+
+    padding-left: 20px;
+    box-sizing: border-box;
+}
