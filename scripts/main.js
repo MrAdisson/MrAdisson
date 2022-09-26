@@ -225,6 +225,22 @@ document.getElementById("experiencePlus").addEventListener("click", e => {
 
 })
 
+let projectOn = true
+document.getElementById("projectPlus").addEventListener("click", e => {
+    
+    let persoProject = document.getElementById("projectContainer")
+    if(projectOn){
+        persoProject.classList.add("hiddenCategory");
+        document.getElementById("projectPlus").innerText = "+"
+        projectOn = !projectOn;
+    }else{
+        persoProject.classList.remove("hiddenCategory");
+        document.getElementById("projectPlus").innerText = "-"
+        projectOn = !projectOn;
+    }
+
+})
+
 
 //SMOOTH #ANCHOR LINKS SCROLLING
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
