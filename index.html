@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +14,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.43/Tone.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="/css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/lightlines.css">
     <link rel="stylesheet" href="/css/xp.css">
     <link rel="stylesheet" href="/css/deroulant.css">
+    <link rel="stylesheet" href="/css/util.css">
+    <link rel="stylesheet" href="/css/main.css">
+
     <link rel="icon" type="svg" href="res/icon/rocket-outline.svg" />
 
 
     <title>Cédric Adisson CV</title>
 </head>
+
 <body>
-    <div id = "magicCircle" style="display: none"></div>
+    <div id="magicCircle" style="display: none"></div>
     <div id="lightLines">
         <div id="lineh1"></div>
         <!-- <div id="lineh2"></div>
@@ -42,87 +48,111 @@
     <div id="linkMenu">
         <ul>
             <li>
-                <a href="https://www.codingame.com/profile/40ee9edc37cdbd26b8df8c6fb3671bab7928524"  target="_blank" class="leftMenuLinks"><ion-icon name="code-slash-outline" class="leftMenuLogo" style="font-size:24px"></ion-icon>CodinGame</a>
+                <a href="https://www.codingame.com/profile/40ee9edc37cdbd26b8df8c6fb3671bab7928524" target="_blank"
+                    class="leftMenuLinks"><ion-icon name="code-slash-outline" class="leftMenuLogo"
+                        style="font-size:24px"></ion-icon>CodinGame</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/c%C3%A9dric-adisson-a6a54797/" target="_blank" class="leftMenuLinks"> <ion-icon name="logo-linkedin" class="leftMenuLogo" style="font-size:24px"></ion-icon> Linkedin</a>
+                <a href="https://www.linkedin.com/in/c%C3%A9dric-adisson-a6a54797/" target="_blank"
+                    class="leftMenuLinks"> <ion-icon name="logo-linkedin" class="leftMenuLogo"
+                        style="font-size:24px"></ion-icon> Linkedin</a>
             </li>
             <li>
-                <a href="https://github.com/MrAdisson/" target="_blank" class="leftMenuLinks"> <ion-icon name="logo-github" class="leftMenuLogo" style="font-size:24px"></ion-icon> Github</a>
+                <a href="https://github.com/MrAdisson/" target="_blank" class="leftMenuLinks"> <ion-icon
+                        name="logo-github" class="leftMenuLogo" style="font-size:24px"></ion-icon> Github</a>
             </li>
         </ul>
-    </div> 
-    
-    <div id="topMenu"> 
-        
-            <div class="menu"><button type="button" id="leftMenuBtn"><ion-icon name="menu" size="large" ></ion-icon></button></div>
-            <a class="topLinkMenuItem" href="#bio">Bio</a>
-            <a class="topLinkMenuItem" href="#formations">Formations</a>
-            <a class="topLinkMenuItem" href="#experiences">Expériences</a>
-            <a class="topLinkMenuItem" href="#projets">Projets</a>
-            <div class="lang"><button type="button" id="lightSelection"><ion-icon id="lightIcon"name="moon-outline" size="large"></ion-icon></button></div>
-            <!-- <div class="search" ><ion-icon name="search" size="large"></ion-icon></div> -->
-            
+    </div>
+
+    <div id="topMenu">
+
+        <div class="menu"><button type="button" id="leftMenuBtn"><ion-icon name="menu" size="large"></ion-icon></button>
+        </div>
+        <a class="topLinkMenuItem" href="#bio">Bio</a>
+        <a class="topLinkMenuItem" href="#formations">Formations</a>
+        <a class="topLinkMenuItem" href="#experiences">Expériences</a>
+        <a class="topLinkMenuItem" href="#projets">Projets</a>
+        <div class="lang"><button type="button" id="lightSelection"><ion-icon id="lightIcon" name="moon-outline"
+                    size="large"></ion-icon></button></div>
+        <!-- <div class="search" ><ion-icon name="search" size="large"></ion-icon></div> -->
+
     </div>
     <div id="mainContainer">
 
         <div id="headProfile">
-            <h1 id="myName">Cédric<br/> <span class="blueTxt"> Adisson</span></h1>
+            <h1 id="myName">Cédric<br /> <span class="blueTxt"> Adisson</span></h1>
             <div class="profilePic"> </div>
             <div class="contactInfo">
-                <div class="mail contactInfoItem"> <ion-icon class="blueTxt" name="mail-outline"></ion-icon><div> cedric.adisson<span class = blueTxt>@</span>gmail.com </div></div>
-                <div class="phone contactInfoItem"><ion-icon class="blueTxt" name="call-outline"></ion-icon><div> +33 6 01 39 39 14</div></div>
-                <div class="location contactInfoItem"> <ion-icon class="blueTxt" name="home-outline"></ion-icon><div> Lille, France</div></div>
-                <div class="permis contactInfoItem"> <ion-icon class="blueTxt" name="car-outline"></ion-icon><div> Permis B</div></div>
+                <div class="mail contactInfoItem"> <ion-icon class="blueTxt" name="mail-outline"></ion-icon>
+                    <div> cedric.adisson<span class=blueTxt>@</span>gmail.com </div>
+                </div>
+                <div class="phone contactInfoItem"><ion-icon class="blueTxt" name="call-outline"></ion-icon>
+                    <div> +33 6 01 39 39 14</div>
+                </div>
+                <div class="location contactInfoItem"> <ion-icon class="blueTxt" name="home-outline"></ion-icon>
+                    <div> Lille, France</div>
+                </div>
+                <div class="permis contactInfoItem"> <ion-icon class="blueTxt" name="car-outline"></ion-icon>
+                    <div> Permis B</div>
+                </div>
             </div>
 
 
         </div>
 
-        <h4 class="intitule">Producteur  de Musique - Développeur <strong><span class="jobText blueTxt">passionné</span></strong></h4>
-        
-        <div id= "bio" class="categoryTitle"><h4 >BIO : </h4> <button class="plusBtn" id="bioPlus"> - </button></div>
-        <div id="bioContainer" class="contentContainer">
-            <p class = "bioText">
-                     Bonjour, je m'appelle Cédric Adisson, j'ai <span id="ageSpan">  </span> ans et je suis 
-                compositeur de musique, ingénieur du son et développeur. Je suis diplômé de l'ISTS (Institut Supérieur des Techniques du Son) depuis 2017 et de l'ENI Ecole Informatique depuis 2021.
-                <br/> <br/>
+        <h4 class="intitule">Producteur de Musique - Développeur <strong><span
+                    class="jobText blueTxt">passionné</span></strong></h4>
 
-                Musicien depuis mon plus jeune âge, j'ai obtenu ma Médaille d'Or de Solfège au Conservatoire de Saint-Omer en 2013
+        <div id="bio" class="categoryTitle">
+            <h4>BIO : </h4> <button class="plusBtn" id="bioPlus"> - </button>
+        </div>
+        <div id="bioContainer" class="contentContainer">
+            <p class="bioText">
+                     Bonjour, je m'appelle Cédric Adisson, j'ai <span id="ageSpan"> </span> ans et je suis
+                compositeur de musique, ingénieur du son et développeur. Je suis diplômé de l'ISTS (Institut Supérieur
+                des Techniques du Son) depuis 2017 et de l'ENI Ecole Informatique depuis 2021.
+                <br /> <br />
+
+                Musicien depuis mon plus jeune âge, j'ai obtenu ma Médaille d'Or de Solfège au Conservatoire de
+                Saint-Omer en 2013
                 puis mon Diplôme National d'Orientation Professionnelle de Piano au Conservatoire de Lille en 2014.
-                Je suis également compositeur de musique, en particulier en Musique Assistée par Ordinateur (MAO). 
-                <br/> <br/>
-                Passionné d'informatique, j'ai effectué en 2021 une reconversion dans le développement informatique à l'ENI Ecole à Rennes.
-                Je cherche aujourd'hui un emploi dans ce domaine, particulièrement dans les langages Java, Javascript (NodeJS) ou Python mais je suis ouvert à toute proposition dans le développement informatique.
+                Je suis également compositeur de musique, en particulier en Musique Assistée par Ordinateur (MAO).
+                <br /> <br />
+                Passionné d'informatique, j'ai effectué en 2021 une reconversion dans le développement informatique à
+                l'ENI Ecole à Rennes.
+                Je cherche aujourd'hui un emploi dans ce domaine, particulièrement dans les langages Java, Javascript
+                (NodeJS) ou Python mais je suis ouvert à toute proposition dans le développement informatique.
 
             </p>
-            <script>  
-                var dob = new Date("01/14/1995");  
+            <script>
+                var dob = new Date("01/14/1995");
                 //DIFFERENCE DE MOIS 
-                var month_diff = Date.now() - dob.getTime();  
+                var month_diff = Date.now() - dob.getTime();
                 //CONVERSION EN DATE FORMAT  
-                var age_dt = new Date(month_diff);          
+                var age_dt = new Date(month_diff);
                 //EXTRACTION DE L'ANNEE      
-                var year = age_dt.getUTCFullYear();       
+                var year = age_dt.getUTCFullYear();
                 //CALCUL DE MON ÂGE  
-                var age = Math.abs(year - 1970);  
+                var age = Math.abs(year - 1970);
                 //AFFICHAGE DE L'ÂGE DANS LE DOCUMENT 
                 document.getElementById("ageSpan").innerText = age 
-            </script>  
+            </script>
         </div>
 
 
 
-        <div id="formations" class="categoryTitle"><h4 >FORMATIONS : </h4> <button class="plusBtn" id="formationPlus"> - </button></div>
-        
+        <div id="formations" class="categoryTitle">
+            <h4>FORMATIONS : </h4> <button class="plusBtn" id="formationPlus"> - </button>
+        </div>
+
         <div id="formationContainer" class="contentContainer experienceContainer">
-            
+
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Développeur Web et Web Mobile</p>
+                <div class="xpInfo">
+                    <p class="xpTitle">Développeur Web et Web Mobile</p>
                     <em class="xpDateAndPlace">2021<br> ENI Ecole (Rennes)</em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Titre de Développeur Web et Web Mobile (RNCP niveau 5)
@@ -135,10 +165,13 @@
                         <p>
                             Analyse, conception et développement d'un site web avec PHP, Symfony et MySQL
                         </p>
-                        <p> Apprentissage de nombreux langages de programmation (HTML, CSS, Java + JavaEE, Javascript, Php), de frameworks (Symfony, Angular), de langages de bases de données (SQL Server, MySQL, PL SQL).
-                            Utilisation de nombreux environnements de développement (Eclipse, IntelliJ, PhpStorm, Android Studio...) et découvertes des méthodes Agiles.
+                        <p> Apprentissage de nombreux langages de programmation (HTML, CSS, Java + JavaEE, Javascript,
+                            Php), de frameworks (Symfony, Angular), de langages de bases de données (SQL Server, MySQL,
+                            PL SQL).
+                            Utilisation de nombreux environnements de développement (Eclipse, IntelliJ, PhpStorm,
+                            Android Studio...) et découvertes des méthodes Agiles.
                         </p>
-                        
+
                     </div>
                 </div>
 
@@ -146,11 +179,12 @@
             </div>
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >INGENIEUR DU SON</p>
-                    <p class = "xpDateAndPlace"><em>2014 - 2017 <br> Institut Supérieur des Techniques du Son (Paris)</em></p>
+                <div class="xpInfo">
+                    <p class="xpTitle">INGENIEUR DU SON</p>
+                    <p class="xpDateAndPlace"><em>2014 - 2017 <br> Institut Supérieur des Techniques du Son (Paris)</em>
+                    </p>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Diplôme D'Enseignement Supérieur des Techniques du Son (DESTS - RNCP niveau 6)
@@ -161,7 +195,8 @@
                             Composition et enregistrement / mixage / mastering de nombreuses productions musicales
                         </p>
                         <p>
-                            Réalisation de courts métrages (<a href="https://www.youtube.com/watch?v=t-6oPUbw2o0" target="_blank"> &#8594; La gerboise du désert &#8592;</a> )
+                            Réalisation de courts métrages (<a href="https://www.youtube.com/watch?v=t-6oPUbw2o0"
+                                target="_blank"> &#8594; La gerboise du désert &#8592;</a> )
                         </p>
                         <p>
                             Musique à l'image (publicité, film)
@@ -181,27 +216,78 @@
 
         <!-- <div style="margin: 30px;"> ========================= </div> -->
 
-        <div id="experiences" class="categoryTitle"><h4 >EXPERIENCES : </h4> <button class="plusBtn" id="experiencePlus"> - </button></div>
-        
+        <div id="experiences" class="categoryTitle">
+            <h4>EXPERIENCES : </h4> <button class="plusBtn" id="experiencePlus"> - </button>
+        </div>
+
         <div id="experienceContainer" class="contentContainer experienceContainer ">
-            
+
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >COMPOSITEUR DE MUSIQUE</p>
-                    <em class="xpDateAndPlace">2018-2022<br>France</em>
+                <div class="xpInfo">
+                    <p class="xpTitle">Développeur React Native / Typescript</p>
+                    <em class="xpDateAndPlace">2018-2022<br>Ankama (Roubaix)</em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
-                            Compositeur de musique pour différents supports de diffusion (entreprises, courts métrages, théâtre...)
+                            Développeur React Native / Typescript pour les applications mobiles Krosmoz et Allskreen
                         </p>
                     </div>
                     <div class="xpProject">
                         <p>
-                            Création de l'identité sonoree de Candéliance dans le cadre de la digitalisation de l'entreprise
+                            Développement et implémentation de nouvelles features, tests, bug fixing, mise en production
+                            et
+                            maintenance des
+                            applications Krosmoz et Allskreen pour Android et iOs. </p>
+
+                        <div class="flexRowL responsiveColumn">
+                            <p>&#8594; Découvre les apps :</p>
+                            <div class="flexRowL">
+
+                                <a href="https://play.google.com/store/apps/details?id=com.ankama.krosmoz"
+                                    target="_blank" class="m-h-xs">
+                                    <div class="appImgContainer">
+                                        <img src="https://media.licdn.com/dms/image/sync/C4E27AQF3fxcgaBuGYg/articleshare-shrink_160/0/1682250818808?e=1683835200&amp;v=beta&amp;t=tyLdRULfcBAf7hIIX9XgwdszeLmYcnjDpQGwY9x4Z7U"
+                                            alt="" id="krosmozImg" class="appImg" />
+                                    </div>
+
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.ankama.allskreen"
+                                    target="_blank">
+                                    <div class="appImgContainer">
+                                        <img src="https://media.licdn.com/dms/image/sync/D4E27AQE73qTtnCquVw/articleshare-shrink_160/0/1682250818432?e=1683835200&amp;v=beta&amp;t=_FFf8TfGrZbeU0IJ615tL-ZZ1PcQ8MnCJVJUzQgsIh0"
+                                            alt="" id="allskreenImg" class="appImg" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="xp">
+                <div class="xpInfo">
+                    <p class="xpTitle">COMPOSITEUR DE MUSIQUE</p>
+                    <em class="xpDateAndPlace">2018-2022<br>France</em>
+                </div>
+                <div class="xpMainContent">
+                    <div class="xpTxt">
+                        <p class="diplome">
+                            Compositeur de musique pour différents supports de diffusion (entreprises, courts
+                            métrages,
+                            théâtre...)
+                        </p>
+                    </div>
+                    <div class="xpProject">
+                        <p>
+                            Création de l'identité sonoree de Candéliance dans le cadre de la digitalisation de
+                            l'entreprise
                         </p>
                         <p>
-                            Composition de musique pour des pièces de théâtre ("Veuve à tout prix", "Au revoir... et merci !")
+                            Composition de musique pour des pièces de théâtre ("Veuve à tout prix", "Au revoir... et
+                            merci !")
                         </p>
                     </div>
                 </div>
@@ -210,14 +296,16 @@
             </div>
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Développeur Full-Stack</p>
+                <div class="xpInfo">
+                    <p class="xpTitle">Développeur Full-Stack</p>
                     <em class="xpDateAndPlace">2022<br> Safebear (Paris)</em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
-                            Réalisation d'un POC (Proof of Concept) d'application d'auto-modération de messages basée sur l'intelligence artificielle pour SafeBear
+                            Réalisation d'un POC (Proof of Concept) d'application d'auto-modération de messages
+                            basée
+                            sur l'intelligence artificielle pour SafeBear
                         </p>
                     </div>
                     <div class="xpProject">
@@ -225,15 +313,19 @@
                             Réalisation et mise en place de l'API (NodeJS)
                         </p>
                         <p>
-                            Envoie des données (messages) dans le modèle d'intelligence artificielle afin d'en vérifier la toxicité (Javascript / TensorFlow)
+                            Envoie des données (messages) dans le modèle d'intelligence artificielle afin d'en
+                            vérifier
+                            la toxicité (Javascript / TensorFlow)
                         </p>
                         <p>
                             Réalisation d'un site web utilisant l'API pour en démontrer le fonctionnement (NodeJS)
                         </p>
                         <p>
-                            Création d'un bot Discord utilisant l'API et auto-modérant les messages contenant de la toxicité (Python / DiscordAPI)
+                            Création d'un bot Discord utilisant l'API et auto-modérant les messages contenant de la
+                            toxicité (Python / DiscordAPI)
                         </p>
-                        <a href="https://safebear-test-app.herokuapp.com/" target="_blank">&#8594; Découvrir l'application &#8592; </a>
+                        <a href="https://safebear-test-app.herokuapp.com/" target="_blank">&#8594; Découvrir
+                            l'application &#8592; </a>
                         </p>
                     </div>
                 </div>
@@ -242,11 +334,11 @@
             </div>
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Développeur Web</p>
+                <div class="xpInfo">
+                    <p class="xpTitle">Développeur Web</p>
                     <em class="xpDateAndPlace">2021 (Stage)<br> REKRUT (Paris)</em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Stage pour la startup REKRUT
@@ -254,10 +346,12 @@
                     </div>
                     <div class="xpProject">
                         <p>
-                            Développement d'un site web (PHP Symphony / JavaScript) 
+                            Développement d'un site web (PHP Symphony / JavaScript)
                         </p>
                         <p>
-                            Réalisation et mise en place de la base de données ainsi que des accès aux données (MySQL + Doctrine)
+                            Réalisation et mise en place de la base de données ainsi que des accès aux données
+                            (MySQL +
+                            Doctrine)
                         </p>
                         <p>
                             Mise en place de l'espace client et l'espace administrateur avec gestion des données
@@ -266,7 +360,8 @@
                             Réalisation des maquettes responsive (Web + Mobile)
                         </p>
                         <p>
-                            Design et implémentation de fonctionnalités (tableau de bord client, suivi de candidatures)
+                            Design et implémentation de fonctionnalités (tableau de bord client, suivi de
+                            candidatures)
                         </p>
                     </div>
                 </div>
@@ -275,11 +370,11 @@
             </div>
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Conseiller Commercial</p>
+                <div class="xpInfo">
+                    <p class="xpTitle">Conseiller Commercial</p>
                     <em class="xpDateAndPlace">2018 - 2019 (CDI)<br> Sonovente (Palaiseau)</em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Conseiller commercial pour l'entreprise Sonovente
@@ -313,17 +408,19 @@
         <!-- <div style="margin: 30px;"> ========================= </div> -->
 
 
-        <div id="projets" class="categoryTitle"><h4 >PROJETS PERSONNELS : </h4> <button class="plusBtn" id="projectPlus"> - </button></div>
-        
+        <div id="projets" class="categoryTitle">
+            <h4>PROJETS PERSONNELS : </h4> <button class="plusBtn" id="projectPlus"> - </button>
+        </div>
+
         <div id="projectContainer" class="contentContainer experienceContainer">
-            
+
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Projets informatiques</p>
-                    <p class = "xpDateAndPlace"><em><ion-icon name="terminal-outline"></ion-icon></em></p>
+                <div class="xpInfo">
+                    <p class="xpTitle">Projets informatiques</p>
+                    <p class="xpDateAndPlace"><em><ion-icon name="terminal-outline"></ion-icon></em></p>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Projets en tant que développeur
@@ -337,7 +434,8 @@
                             Réalisation d'un "chat" en WebSocket (Javascript / Socket.io)
                         </p>
                         <p>
-                            Création de maquettes de jeux vidéo 2D et 3D avec un moteur de jeu (Godot / Unreal Engine).
+                            Création de maquettes de jeux vidéo 2D et 3D avec un moteur de jeu (Godot / Unreal
+                            Engine).
                         </p>
                         <p>
                             Création de maquettes de moteurs de jeux vidéo 2D (Java / OpenGL / LWJGL).
@@ -352,11 +450,11 @@
             </div>
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Projets audiovisuels</p>
+                <div class="xpInfo">
+                    <p class="xpTitle">Projets audiovisuels</p>
                     <em class="xpDateAndPlace"><ion-icon name="videocam-outline"></ion-icon></em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Projets personnels audiovisuels (Films / Courts-métrage)
@@ -364,13 +462,15 @@
                     </div>
                     <div class="xpProject">
                         <p>
-                            Prix de la meilleure direction artistique pour le court-métrage "Fortuna" - 48h de l'ESRA
+                            Prix de la meilleure direction artistique pour le court-métrage "Fortuna" - 48h de
+                            l'ESRA
                         </p>
                         <p>
                             Co-réalisation du clip "Danser" pour l'artiste Jade Vanloo
                         </p>
                         <p>
-                            Assistant réalisateur, compositeur et sound-designer pour le film "Je suis un reflet" réalisé par Yanis Nasra - Nikon Festival 
+                            Assistant réalisateur, compositeur et sound-designer pour le film "Je suis un reflet"
+                            réalisé par Yanis Nasra - Nikon Festival
                         </p>
                         <p>
                             Co-réalisation du clip "Danser" pour l'artiste Jade Vanloo
@@ -382,14 +482,15 @@
             </div>
 
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Projets musicaux</p>
-                    <em class = "xpDateAndPlace"><ion-icon name="musical-notes-outline"></ion-icon></em>
+                <div class="xpInfo">
+                    <p class="xpTitle">Projets musicaux</p>
+                    <em class="xpDateAndPlace"><ion-icon name="musical-notes-outline"></ion-icon></em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
-                            Projets personnels en tant que compositeur de musique ou en lien avec la création musicale
+                            Projets personnels en tant que compositeur de musique ou en lien avec la création
+                            musicale
                         </p>
                     </div>
                     <div class="xpProject">
@@ -397,10 +498,12 @@
                             Réalisation musicale de la production "Plaisir" de l'artiste Adahy (Electro-pop)
                         </p>
                         <p>
-                            Réalisations de plusieurs lives (Ableton Live) pour des évenements musicaux en tant que Jamie Potter ou Greasy
+                            Réalisations de plusieurs lives (Ableton Live) pour des évenements musicaux en tant que
+                            Jamie Potter ou Greasy
                         </p>
                         <p>
-                            Composition / Mixage / Mastering de musiques pour des courts-métrages ("Frou-frou", "Théomania", "Fortuna") et un long métrage ("Le Renard Blanc" - Association des Linx)
+                            Composition / Mixage / Mastering de musiques pour des courts-métrages ("Frou-frou",
+                            "Théomania", "Fortuna") et un long métrage ("Le Renard Blanc" - Association des Linx)
                         </p>
                         <p>
                             Responsable du booking des artistes pour la première édition du festival "Naygour" (59)
@@ -411,13 +514,13 @@
 
             </div>
 
-            
+
             <div class="xp">
-                <div class= "xpInfo">
-                    <p class="xpTitle" >Autres projets</p>
-                    <em class = "xpDateAndPlace"><ion-icon name="sparkles-outline"></ion-icon></em>
+                <div class="xpInfo">
+                    <p class="xpTitle">Autres projets</p>
+                    <em class="xpDateAndPlace"><ion-icon name="sparkles-outline"></ion-icon></em>
                 </div>
-                <div class = "xpMainContent">
+                <div class="xpMainContent">
                     <div class="xpTxt">
                         <p class="diplome">
                             Autres projets personnels divers.
@@ -425,13 +528,15 @@
                     </div>
                     <div class="xpProject">
                         <p>
-                            Streamer affilié Amazon sur la plateforme Twitch avec la chaine MrAdisson (création musicale, diffusion de jeu vidéo, diffusion de développement informatique)
+                            Streamer affilié Amazon sur la plateforme Twitch avec la chaine MrAdisson (création
+                            musicale, diffusion de jeu vidéo, diffusion de développement informatique)
                         </p>
                         <p>
-                            Administrateur d'un serveur de jeu Minecraft (Correction des bugs, administration et maintenance du serveur, configuration des plugins)
+                            Administrateur d'un serveur de jeu Minecraft (Correction des bugs, administration et
+                            maintenance du serveur, configuration des plugins)
                         </p>
                         <p>
-                            
+
                         </p>
                     </div>
                 </div>
@@ -446,7 +551,8 @@
     </div>
 
 
-    
+
 </body>
 <script src="/scripts/main.js"></script>
+
 </html>
